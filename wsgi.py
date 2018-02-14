@@ -44,3 +44,7 @@ def hello_world():
 def getIssueid(issue_id):
     return str(getIssueRedMine(issue_id))
 
+
+
+if __name__ == "__main__":
+    app.run()
