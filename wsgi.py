@@ -1,5 +1,4 @@
 import requests
-import issues
 from flask import Flask
 
 
