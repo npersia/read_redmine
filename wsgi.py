@@ -32,19 +32,19 @@ def getIssueRedMine(issue):
 
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def hello_world():
     return 'Hello, World!'
 
 
-@app.route('/issue/<issue_id>')
+@application.route('/issue/<issue_id>')
 def getIssueid(issue_id):
     return str(getIssueRedMine(issue_id))
 
 
 
 if __name__ == "__main__":
-    app.run()
+    application.run()
